@@ -9,4 +9,4 @@ Started May 30, 2026. BUET EEE.
 - `papers-i-write/` — drafts of my own work
 
 ## Progress
-- **Day 1:** CIFAR-10 baseline CNN, 75% test acc, observed overfitting after epoch 7.
+- **Day 1:** CIFAR-10 baseline CNN — 75.28% test accuracy. Observed overfitting after epoch 7 (train/test gap widened from 0% to 19%). [View notebook on nbviewer](https://nbviewer.org/github/MehediHasanUthan/ml-journey/blob/main/projects/day01-cifar10-baseline.ipynb)
