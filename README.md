@@ -1,6 +1,6 @@
 # ml-journey
 Daily log of building toward research and freelance work in computer vision and ML
-Started May 30, 2026. BUET EEE.
+-Started May 30, 2026. BUET EEE.
 
 ## Structure
 - `projects/` — daily notebooks and code
