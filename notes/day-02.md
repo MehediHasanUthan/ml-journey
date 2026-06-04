@@ -10,7 +10,7 @@
 
 ## Block 2 — Filter visualization
 ### What I expected vs what I saw (conv1 filters)
-![conv1 filters](Images/conv1filters.png)
+![conv1 filters](ml-journey/Images/conv1filters.png)
 Expected: edge detectors (one bright side, one dark side across the 3×3 patch).
 Saw: mostly color and color-gradient detectors. Very few filters showed clean edge structure.
 
@@ -36,13 +36,13 @@ Initial filter visualization suggested conv1 had learned mostly color and gradie
 Input image: class Frog
 
 - **Conv1 (32 channels, 32×32 spatial):**
-![conv1 stages](Images/conv1stages.png) 
+![conv1 stages](ml-journey/Images/conv1stages.png) 
 edge-like responses on most channels, tracing the animal's outline; several channels emphasize different body parts (limbs, torso, head); a few channels mostly dark, indicating filters that don't fire on this particular image. One channel showed an inverted/blob response — bright body, dark background — likely a uniform-region detector rather than an edge detector.
 - **Conv2 (16×16 spatial, first 32 of 64 channels):** 
-![conv2 stages](Images/conv2featuremap.png)
+![conv2 stages](ml-journey/Images/conv2featuremap.png)
 spatial resolution is halved and responses become blockier. Many channels show activity concentrated in only one region of the image — a corner, a strip, a blob — rather than tracing the full animal outline. The shape is still vaguely recognizable in some channels but the network is starting to make spatial decisions about *where* interesting things are, rather than outlining everything.
 - **Conv3 (8×8 spatial, first 32 of 128 channels):** 
-![conv3 stages](Images/conv3featuremaps.png)
+![conv3 stages](ml-journey/Images/conv3featuremaps.png)
 the animal shape is gone. Most channels are entirely black or contain only 1–3 bright pixels. Each lit pixel represents the presence of a concept somewhere within a ~12×12 region of the original image (the receptive field), not a specific pixel location. Roughly two-thirds of the displayed channels are dark, meaning those concept detectors did not fire on this particular image.
 
 ### Key insights from Block 3
