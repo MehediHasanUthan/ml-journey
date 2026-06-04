@@ -7,6 +7,7 @@ At layer 2 same process happens again but this time these pooled 32 feature maps
 The dataset i used is the built in dataset of torchvision library labeled CIFAR10. This dataset contains 60000 images and has 10 classes. Using the features of torchvision library i have loaded the train and test datasets.
 
 ## Result
+After trainig the model on whole dataset we get this outputs.
 - Final train acc: 94.46%
 - Final test acc:  75.28%
 - Best test acc:   75.78% at epoch 8
@@ -15,6 +16,11 @@ The dataset i used is the built in dataset of torchvision library labeled CIFAR1
 Train or test gap widens from 0% at epoch 2 to 19% at epoch 10. Test acc plateaus
 around epoch 7. Model overfits.
 
+## What I didn't fully understand
+- The pattern detecting at each stage that are represented with numbers. But the value is not actually tells anything about pattern that is getting detected
+
+## Time spent
+- 6-7hours
 ## What I didn't fully understand
 - The pattern detecting at each stage that are represented with numbers. But the value is not actually tells anything about pattern that is getting detected
 
